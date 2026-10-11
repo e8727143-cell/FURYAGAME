@@ -1,4 +1,8 @@
 window.FURYA_DOWNLOAD_CONFIG = {
 	githubRepo: "e8727143-cell/FURYAGAME",
-	assetName: "FURYA.apk"
+	assets: {
+		android: "FURYA.apk",
+		windows: "FURYA.exe"
+	}
 };
+

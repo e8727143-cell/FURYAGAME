@@ -24,22 +24,29 @@
 		<main id="inicio">
 			<section class="hero" aria-labelledby="title">
 				<div class="hero-copy">
-					<p class="eyebrow"><span>ANDROID</span><b>•</b> ÚLTIMA VERSIÓN</p>
+					<p class="eyebrow"><span>ANDROID + PC</span><b>•</b> ÚLTIMA VERSIÓN</p>
 					<h1 id="title">ENTRA.<br><em>LUCHA.</em><br>VUELVE.</h1>
-					<p class="intro">El combate empieza aquí. Descarga FURYA y entra a la partida.</p>
+					<p class="intro">El combate empieza aquí. Elige tu plataforma y entra a la misma partida.</p>
 					<div class="download-card">
 						<div class="release-line">
 							<div><span class="micro-label">VERSIÓN ACTUAL</span><strong id="version">Buscando actualización…</strong></div>
-							<div class="live"><i></i> ACTUALIZADO</div>
+							<div class="live"><i></i> ANDROID + PC</div>
 						</div>
-						<a class="download-button is-disabled" id="download" href="#" aria-disabled="true">
-							<span class="download-icon" aria-hidden="true">↓</span>
-							<span><b>DESCARGAR FURYA</b><small id="download-meta">Conectando con las versiones…</small></span>
-							<span class="button-arrow" aria-hidden="true">↗</span>
-						</a>
+						<div class="download-actions">
+							<a class="download-button is-disabled" id="download-android" href="#" aria-disabled="true">
+								<span class="download-icon" aria-hidden="true">↓</span>
+								<span><b>DESCARGAR PARA ANDROID</b><small id="android-meta">Conectando con las versiones…</small></span>
+								<span class="button-arrow" aria-hidden="true">↗</span>
+							</a>
+							<a class="download-button download-button--windows is-disabled" id="download-windows" href="#" aria-disabled="true">
+								<span class="download-icon" aria-hidden="true">▣</span>
+								<span><b>DESCARGAR PARA WINDOWS</b><small id="windows-meta">Conectando con las versiones…</small></span>
+								<span class="button-arrow" aria-hidden="true">↗</span>
+							</a>
+						</div>
 						<p class="status" id="status" role="status" aria-live="polite"></p>
 					</div>
-					<p class="install-note"><span>ⓘ</span> Al terminar la descarga, abre el APK para instalarlo. Android puede pedir permiso para instalar desde el navegador.</p>
+					<p class="install-note"><span>ⓘ</span> En Android, abre el APK para instalarlo. En Windows, descarga y ejecuta FURYA.exe.</p>
 				</div>
 				<div class="hero-art" aria-hidden="true">
 					<div class="sun"></div><div class="ring ring-one"></div><div class="ring ring-two"></div>
@@ -50,8 +57,8 @@
 			</section>
 
 			<section class="details" aria-label="Información de la descarga">
-				<div><span class="detail-index">01</span><b>UNA SOLA PARTIDA</b><small>Entra y juega con tu escuadra.</small></div>
-				<div><span class="detail-index">02</span><b>VERSIÓN ACTUAL</b><small id="published">La página muestra el APK más reciente.</small></div>
+				<div><span class="detail-index">01</span><b>JUEGO CRUZADO</b><small>PC y móvil comparten la partida online.</small></div>
+				<div><span class="detail-index">02</span><b>VERSIÓN ACTUAL</b><small id="published">La página muestra las versiones más recientes.</small></div>
 				<div><span class="detail-index">03</span><b>DESCARGA DIRECTA</b><small>El archivo se descarga desde GitHub Releases.</small></div>
 			</section>
 		</main>
@@ -59,3 +66,4 @@
 		<footer><span>FURYA <b>©</b> <span id="year"></span></span><span>HECHO PARA JUGAR</span></footer>
 	</body>
 </html>
+
