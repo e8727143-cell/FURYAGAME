@@ -1,15 +1,15 @@
 # Página de descarga FURYA
 
-Sitio estático para Vercel. El APK se aloja como archivo de una GitHub Release; no se agrega a este repositorio ni al deployment de Vercel.
+Página pública: https://furyagame.vercel.app  
+Repositorio público: `e8727143-cell/FURYAGAME`  
+Proyecto de Vercel: `furyagame`
 
-## Repositorio y deploy
-
-El repositorio público configurado es `e8727143-cell/FURYAGAME`. Sube **el contenido de esta carpeta** como raíz del repositorio, sin subir el resto del proyecto del juego. No necesita framework ni comando de build; la raíz contiene `index.html`.
-
-Después importa `e8727143-cell/FURYAGAME` en Vercel y deja vacíos los comandos de build. Vercel publicará el sitio estático desde la raíz.
+La página obtiene la versión y el APK desde la GitHub Release más reciente, cuyo asset debe llamarse `FURYA.apk`. El APK se guarda en GitHub Releases; no se sube al deployment de Vercel ni se mezcla con los archivos del juego.
 
 ## Publicar una versión
 
-Desde la carpeta del juego, usa `PublicarVersion.bat`. El script exporta el preset Android, incrementa el código de versión y crea una GitHub Release con el APK en `e8727143-cell/FURYAGAME`. Necesitas Godot 4.7.2, GitHub CLI autenticado (`gh auth login`) y permisos de escritura en ese repositorio. La exportación release debe estar configurada para firmar el APK en Godot.
+Desde la raíz del proyecto del juego, ejecuta `PublicarVersion.bat`. El script exporta el APK Android, incrementa las versiones y crea una Release en `e8727143-cell/FURYAGAME`.
 
-La página muestra la versión nueva en cuanto GitHub publica la Release; no hay que volver a desplegar Vercel.
+Después de cada APK, vuelve a desplegar esta carpeta a producción en el proyecto Vercel `furyagame` y comprueba que `https://furyagame.vercel.app` responde y que GitHub `releases/latest` contiene `FURYA.apk`. La conexión automática GitHub-Vercel no quedó configurada; el deploy se realiza mediante Vercel MCP.
+
+La Release pública actual es `v1.0`.
